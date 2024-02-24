@@ -47,6 +47,8 @@ This is just the reverse of the encoding process. Additional check of the MD5 ha
 
 ## Deriving AES-256 key from password
 
-1. Hash the password with `MD5`
+See [here](https://github.com/godotengine/godot/blob/0ee0fa42e6639b6fa474b7cf6afc6b1a78142185/core/io/file_access_encrypted.cpp#L101) for Godot implementation
+
+1. Hash the password with MD5
 2. Convert to a hexademical string
 3. Key is the 32 chars of the hex string
